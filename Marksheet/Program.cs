@@ -38,6 +38,54 @@
             Console.WriteLine("Percentage: " + percentage);
 
 
+            if (percentage > 80)
+            {
+                Console.WriteLine("Grade: A+");
+
+            }
+            else if (percentage > 70)
+            {
+                Console.WriteLine("Grade: A");
+            }
+            else if (percentage > 60)
+            {
+                Console.WriteLine("Grade: B");
+            }
+            else if (percentage > 50)
+            {
+                Console.WriteLine("Grade: C");
+            }
+            else if (percentage > 40)
+            {
+                Console.WriteLine("Grade: D");
+            }
+            else
+            {
+                Console.WriteLine("Fail");
+            }
+
+            int supply = 0;
+            if (w < 24)
+            {
+                supply++;
+            }
+            if (b < 18)
+            {
+                supply++;
+            }
+            if (p < 24)
+            {
+                supply++;
+            }
+            if (c < 24)
+            {
+                supply++;
+            } 
+            
+            Console.WriteLine ("You have {0} subjects in supply.", supply);
+
+
+
 
         }
     }
